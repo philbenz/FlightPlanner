@@ -285,17 +285,17 @@ function pullWeatherData(airportAbbrev) {
      resolve(weather)
   }).fail(function(err){
     // this is just boilerplate text given that the freaking API rarely works
-    fromMETAR = "KAPA 111853Z 02012KT 10SM FEW070 FEW150 BKN220 29/04 A3015 RMK AO2 SLP132 T02940039"
+    fromMETAR = "KAPA 121753Z 00000KT 10SM FEW120 FEW140 23/07 A3028 RMK AO2 SLP192 T02280072 58005 $"
 
-    toMETAR = "KMSY 111853Z 25012KT 10SM -RA FEW008 BKN080 OVC095 27/25 A2995 RMK AO2 SLP146 P0009 T02670250"
+    toMETAR = "KMSY 121826Z 23014KT 8SM -RA BKN013 BKN029 OVC065 25/23 A2990 RMK AO2 P0001 T02500228"
 
-    // $('p.departureWeather').text(fromMETAR);
+    $('p.departureWeather').text(fromMETAR);
 
-    //
-    // $('p.arrivalWeather').text(toMETAR);
-    //
-    // $('p.departureWeather').css("fontSize", "12px");
-    // $('p.arrivalWeather').css("fontSize", "12px");
+
+    $('p.arrivalWeather').text(toMETAR);
+
+    $('p.departureWeather').css("fontSize", "12px");
+    $('p.arrivalWeather').css("fontSize", "12px");
 
     return reject(err);
   });
