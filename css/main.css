@@ -1,0 +1,46 @@
+/* add custom styles */
+
+/*#departLabel {
+  margin-bottom: 30px;
+}*/
+
+div #title {
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.airports {
+  background-color: "grey";
+}
+
+#itemLabel, #departingAirport, #arrivalLabel, #arrivingAirport {
+  margin-top: 20px;
+}
+
+#totalFuelLabel, #totalFuel, #hourFuelLabel, #speedLabel, #speed {
+  font-size: 10;
+}
+
+
+.AirportLabel p {
+  margin-left: 17px,
+  color: blue
+}
+
+#arrivingAirport {
+  margin-left: 30px,
+}
+
+#itemLabel {
+  margin-bottom: 20px,
+}
+
+
+.timeDistance label, .timeDistance p{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.airports {
+  display: inline-block;
+}

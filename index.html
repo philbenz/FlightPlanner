@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flight Planner on the Cheap</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <form>
+        <div class="col-lg-8">
+            <row>
+              <div id="label">
+              <label for="departure" id="departLabel">Departing
+              </label>
+              <input name="departure" id="departingAirport"  type="text" size="5">
+
+              <label id="itemLabel" for="depWeather"></label>
+              <p name="depWeather" class="departureWeather weather">.</p>
+              </div>
+              <div class="AirportLabel">
+                <p class="departLabel"></p>
+              </div>
+            </row>
+          <row>
+            <div id="label">
+            <label for="arrival" id="arrivalLabel">Arriving</label>
+            <input name="arrival" type="text" id="arrivingAirport"  size="5">
+              <label id="itemLabel" for="arrWeather"></label>
+              <p name="arrWeather" class="arrivalWeather weather">.</p>
+            </div>
+            <div class="arrivingAirport">
+              <p class="arrivingLabel"></p>
+            </div>
+          </row>
+          <row class="timeDistance">
+              <label for="distance">Distance</label>
+              <p name="distance" class="distance">
+              </p>
+              <label for="time">Time</label>
+              <p name="time" id="time">enter speed for travel time</p>
+              <label for="weatherCheck">
+              <input id="weatherCheck" type="checkbox">Show Weather
+              </label>
+          </row>
+        </div>
+            <div class="col-lg-1">
+              <row>
+              <div class="flightPlanGroup">
+                <div>
+                  <label id="totalFuelLabel" for="totalFuel">Total Fuel Onboard
+                  <input name="totalFuel"
+                  id="totalFuel" type="text"
+                  size='6'>
+                  </label>
+                </div>
+                <div id="">
+                  <label id="hourFuelLabel" for="hourFuel">Hourly Gallon Burn Rate
+                  <input name="hourFuel"
+                  id="hourFuel" type="text"  size='6'>
+                </div>
+                </div>
+
+              <div>
+                <label id="speedLabel" for="speed">Speed
+                <input name="speed" id="speed" type="text" class="form-control" size='5'>
+                </label>
+              </div>
+
+              </row>
+              </div>
+              <row>
+                <p id="title">Flight Planner</p>
+                <p>(on the cheap)</p>
+              </row>
+            </div>
+      </form>
+      <row class="col-lg-12">
+        <div id="googleMap" style="width:1410px;height:580px">
+        </div>
+      </row>
+    </div>
+    <!-- scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?v3"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+    <script src="http://openlayers.org/api/OpenLayers.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
