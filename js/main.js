@@ -25,7 +25,7 @@ $(document).on('ready', function() {
     url: 'https://api.ipify.org'
   }).done(function(results) {
     // pulled this directly from a google response search to pull the location.
-    $.get('http://ipinfo.io', function(response) {
+    $.get('https://ipinfo.io', function(response) {
 
     }, 'jsonp').done(function(response) {
       //build out the mapInfo object with the ipinfo result.
