@@ -10,7 +10,7 @@ $(document).on('ready', function() {
     //split location into two doubles to use good API call
 
     var mapProp = {
-        center:new google.maps.LatLng(39.7392, 104.9903),
+        center:new google.maps.LatLng(39.7392, -104.9903),
         zoom: 11,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
