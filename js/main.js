@@ -5,13 +5,12 @@ $(document).on('ready', function() {
   console.log('sanity check for flight planning!');
 
   //this function is being used to populate the mapProp object for the map.
-  function initialize(location) {
+  function initialize() {
 
     //split location into two doubles to use good API call
-    var latlng = location.split(',');
 
     var mapProp = {
-        center:new google.maps.LatLng(latlng[0], latlng[1]),
+        center:new google.maps.LatLng(39.7392, 104.9903),
         zoom: 11,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
@@ -24,17 +23,12 @@ $(document).on('ready', function() {
     method: 'GET',
     url: 'https://api.ipify.org'
   }).done(function(results) {
-    // pulled this directly from a google response search to pull the location.
-    $.get('http://ipinfo.io', function(response) {
-
-    }, 'jsonp').done(function(response) {
       //build out the mapInfo object with the ipinfo result.
-      var mapInfo = initialize(response.loc);
+      var mapInfo = initialize();
 
       //set the map in index.html
       var map = new google.maps.Map(document.getElementById('googleMap'), mapInfo);
     });
-  });
 
   //Event Listener
   $('#departingAirport').on('change', function() {
