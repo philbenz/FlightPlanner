@@ -173,7 +173,7 @@ flightPath.setMap(map);
   if ($('#weatherCheck').is(':checked')) {
   var myMapType = new google.maps.ImageMapType({
     getTileUrl: function(coord, zoom) {
-      return "http://maps.owm.io:8091/56ce0fcd4376d3010038aaa8/" +
+      return "http://maps.owm.io:8091/5e923571d3b5bc6a591cae185a841978/" +
              zoom + "/" + coord.x + "/" + coord.y + "?hash=5";
     },
     tileSize: new google.maps.Size(256, 256),
