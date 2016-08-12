@@ -289,13 +289,13 @@ function pullWeatherData(airportAbbrev) {
 
     toMETAR = "KMSY 111853Z 25012KT 10SM -RA FEW008 BKN080 OVC095 27/25 A2995 RMK AO2 SLP146 P0009 T02670250"
 
-    $('p.departureWeather').text(fromMETAR);
+    // $('p.departureWeather').text(fromMETAR);
 
-
-    $('p.arrivalWeather').text(toMETAR);
-
-    $('p.departureWeather').css("fontSize", "11px");
-    $('p.arrivalWeather').css("fontSize", "11px");
+    //
+    // $('p.arrivalWeather').text(toMETAR);
+    //
+    // $('p.departureWeather').css("fontSize", "12px");
+    // $('p.arrivalWeather').css("fontSize", "12px");
 
     return reject(err);
   });
